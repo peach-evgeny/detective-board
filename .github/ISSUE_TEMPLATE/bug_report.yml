@@ -13,8 +13,8 @@ body:
     id: version
     attributes:
       label: Версия Detective Board
-      description: Например, 1.0.0-beta.1
-      placeholder: 1.0.0-beta.1
+      description: Например, 1.0.0-beta.2
+      placeholder: 1.0.0-beta.2
     validations:
       required: true
 
@@ -37,6 +37,7 @@ body:
         - Нити / связи / узлы
         - Конструктор дела / этапы
         - Режим «Глазами игроков»
+        - Данные / backup / обновление
         - Player Viewer
         - Netlify / публикация
         - Экспорт PNG
