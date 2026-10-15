@@ -45,8 +45,8 @@ Detective Board строится вокруг двух параллельных 
 <td width="50%" align="center"><strong>Что видят игроки</strong></td>
 </tr>
 <tr>
-<td><img src="docs/screenshots/02-master-view-card.png" alt="Карточка человека в режиме мастера" width="100%"></td>
-<td><img src="docs/screenshots/03-player-view-card.png" alt="Та же карточка глазами игроков" width="100%"></td>
+<td><img src="docs/screenshots/03-player-view-card.png" alt="Карточка человека в режиме мастера со скрытыми фактами" width="100%"></td>
+<td><img src="docs/screenshots/02-master-view-card.png" alt="Та же карточка глазами игроков без скрытых фактов" width="100%"></td>
 </tr>
 </table>
 
