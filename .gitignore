@@ -1,0 +1,12 @@
+node_modules/
+dist/
+release/
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
+
+# Локальные данные расследований не должны попадать в репозиторий
+data/*
+!data/.gitkeep
