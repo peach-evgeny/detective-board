@@ -1,0 +1,105 @@
+name: Сообщить об ошибке
+description: Что-то работает неправильно, падает или приводит к неправильному результату
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за тестирование Detective Board. Чем точнее шаги воспроизведения, тем быстрее получится найти причину.
+
+  - type: input
+    id: version
+    attributes:
+      label: Версия Detective Board
+      description: Например, 1.0.0-beta.1
+      placeholder: 1.0.0-beta.1
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Версия Windows
+      placeholder: Windows 11 24H2 / Windows 10 22H2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Где возникла проблема?
+      options:
+        - Главный экран / список дел
+        - Доска мастера
+        - Карточки и факты
+        - Нити / связи / узлы
+        - Конструктор дела / этапы
+        - Режим «Глазами игроков»
+        - Player Viewer
+        - Netlify / публикация
+        - Экспорт PNG
+        - Сохранение / загрузка дела
+        - Запуск приложения
+        - Другое
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      description: Что нужно сделать, чтобы проблема повторилась?
+      placeholder: |
+        1. Открыть дело...
+        2. Нажать...
+        3. Перетащить...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Что ожидалось?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Что произошло на самом деле?
+    validations:
+      required: true
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Диагностика
+      description: В программе откройте «? Как пользоваться» → «Скопировать диагностику» и вставьте сюда результат. Не публикуйте секретные токены.
+      render: text
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Скриншоты или видео
+      description: Можно перетащить изображения прямо в это поле.
+
+  - type: checkboxes
+    id: severity
+    attributes:
+      label: Важность
+      options:
+        - label: Проблема приводит к падению приложения
+        - label: Проблема может привести к потере или повреждению данных
+        - label: Проблема мешает продолжить работу с делом
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Проверка
+      options:
+        - label: Я проверил(а), что в Issues ещё нет очевидного дубликата этой ошибки
+          required: true
+        - label: Я не приложил(а) Netlify-токен, пароли или другие секретные данные
+          required: true
