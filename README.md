@@ -20,28 +20,6 @@
 
 > Windows SmartScreen может показать предупреждение «Неизвестный издатель»: публичная бета пока не подписана коммерческим code-signing сертификатом.
 
-## Скриншоты
-
-### Доска расследования
-
-![Общий вид расследования](docs/screenshots/01-overview-master-board.jpg)
-
-### Информация мастера и игроков
-
-| Что видит мастер | Что видят игроки |
-|---|---|
-| ![Карточка мастера](docs/screenshots/02-master-view-card.jpg) | ![Карточка игрока](docs/screenshots/03-player-view-card.jpg) |
-
-### Конструктор дела
-
-![Истина мастера и этапы раскрытия](docs/screenshots/04-case-constructor.jpg)
-
-### На телефоне
-
-| Интерактивная доска | Подробности карточки |
-|---|---|
-| ![Мобильная доска](docs/screenshots/05-mobile-player-board.jpg) | ![Мобильные подробности](docs/screenshots/06-mobile-card-details.jpg) |
-
 ## Идея
 
 Detective Board строится вокруг двух параллельных слоёв:
