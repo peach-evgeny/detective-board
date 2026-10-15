@@ -1,0 +1,51 @@
+name: Предложить улучшение
+description: Идея функции или улучшения рабочего процесса мастера
+title: "[Idea] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        В Beta 1 приоритет — стабильность. Идеи не теряются: они помогают сформировать следующие версии.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую проблему мастера это решает?
+      description: Опишите реальную ситуацию, в которой текущий интерфейс становится неудобным.
+      placeholder: Когда я готовлю большое расследование и у меня 30–40 карточек, мне приходится...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Как вы представляете решение?
+      description: Можно описать интерфейс, действие или поведение программы.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Как вы решаете это сейчас?
+      description: Необязательно. Обходной путь часто помогает понять задачу лучше.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: К какой части относится идея?
+      options:
+        - Конструирование расследования
+        - Карточки и факты
+        - Доска / навигация
+        - Связи и узлы
+        - Этапы раскрытия
+        - Player Viewer
+        - Публикация
+        - Экспорт / резервирование
+        - Мобильный интерфейс
+        - Другое
+    validations:
+      required: true
